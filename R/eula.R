@@ -8,7 +8,7 @@ eula <- function() {
     return(invisible(TRUE))
   }
 
-  resp <- ""
+  resp <- "y"
   while(!(resp %in% c("y", "yes", "n", "no"))) {
     resp <- readline(prompt="The LoupeR executable is subject to the 10x End User Software License, available at:\nhttps://10xgen.com/EULA \n\nDo you accept the End-User License Agreement\n(y/yes or n/no): ")
     resp <- tolower(resp)
